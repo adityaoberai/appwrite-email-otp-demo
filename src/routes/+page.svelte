@@ -6,7 +6,7 @@
 
     async function createOtp(e) {
         e.preventDefault();
-		const formData = new FormData(e.target);
+        const formData = new FormData(e.target);
         token = await user.createOtp(formData.get('email'));
         securityPhrase = `Security phrase: ${token.phrase}`;
         console.log(token);
@@ -15,7 +15,7 @@
 
     async function verifyOtp(e) {
         e.preventDefault();
-		const formData = new FormData(e.target);
+        const formData = new FormData(e.target);
         const response = await user.verifyOtp(token.userId, formData.get('otp'));
         console.log(response);
         alert("OTP verified");

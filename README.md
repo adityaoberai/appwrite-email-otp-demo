@@ -1,38 +1,27 @@
-# create-svelte
+# Appwrite Email OTP Sample App
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+SvelteKit app that showcases how to implement email OTP authentication using Appwrite.
 
-## Creating a project
+## Setting up the project
 
-If you're seeing this, you've probably already done this step. Congrats!
+Clone the project to your local system and install all dependencies
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/adityaoberai/appwrite-email-otp-demo.git
+cd appwrite-email-otp-demo
+npm install
 ```
 
-## Developing
+Once that is done, update the file `.env.example` to `.env` and add the Appwrite API endpoint and project ID.
+```
+PUBLIC_APPWRITE_ENDPOINT=
+PUBLIC_APPWRITE_PROJECT_ID=
+```
+
+## Running the app
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
