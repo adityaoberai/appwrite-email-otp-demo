@@ -1,16 +1,16 @@
-import { account } from "./appwrite";
-import { ID } from "appwrite";
+import { account } from './appwrite';
+import { ID } from 'appwrite';
 
 export const user = {
-    createOtp: async (email) => {
-        return await account.createEmailToken(ID.unique(), email, true);
-    },
+	createOtp: async (email) => {
+		return await account.createEmailToken(ID.unique(), email, true);
+	},
 
-    verifyOtp: async (usedId, secret) => {
-        return await account.createSession(usedId, secret);
-    },
+	verifyOtp: async (userId, secret) => {
+		return await account.createSession(userId, secret);
+	},
 
-    logout: async () => {
-        await account.deleteSession("current");
-    },
-}
+	logout: async () => {
+		await account.deleteSession('current');
+	}
+};

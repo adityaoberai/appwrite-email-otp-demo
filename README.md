@@ -13,6 +13,7 @@ npm install
 ```
 
 Once that is done, update the file `.env.example` to `.env` and add the Appwrite API endpoint and project ID.
+
 ```
 PUBLIC_APPWRITE_ENDPOINT=
 PUBLIC_APPWRITE_PROJECT_ID=
